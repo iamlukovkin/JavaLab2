@@ -16,5 +16,6 @@ public class Main {
         double[] sumElementsBetweenPositives = MatrixOperations.getSumElementsBetweenPositives(matrix);
         System.out.println("Сумма элементов между положительными элементами каждой строки: ");
         Output.printArray(sumElementsBetweenPositives);
+        Input.getScanner().close();
     }
 }

@@ -1,3 +1,4 @@
+
 public class ValueOperations {
     private static boolean[] checkExistence(double k, double m, double n) {
         boolean[] result = new boolean[4];

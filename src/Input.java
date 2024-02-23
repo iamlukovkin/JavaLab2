@@ -2,8 +2,7 @@ import java.util.Scanner;
 
 public class Input {
     private static Scanner scanner;
-
-    private static Scanner getScanner() {
+    public static Scanner getScanner() {
         if (scanner == null) {
             scanner = new Scanner(System.in);
         }

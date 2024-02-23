@@ -1,5 +1,4 @@
 public class Output {
-
     public static void printArray(String[] array) {
         for (String s : array) {
             System.out.print(s + " ");

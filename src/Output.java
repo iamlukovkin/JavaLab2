@@ -1,6 +1,8 @@
+import java.util.ArrayList;
+
 public class Output {
-    public static void printArray(String[] array) {
-        for (String s : array) {
+    public static void printArray(ArrayList<Long> array) {
+        for (Long s : array) {
             System.out.print(s + " ");
         }
         System.out.println();
@@ -13,9 +15,10 @@ public class Output {
         System.out.println();
     }
 
-    public static void printReversedArray(String[] array) {
-        for (int i = array.length - 1; i >= 0; i--) {
-            System.out.print(array[i] + " ");
+    public static void printReversedArray(ArrayList<Long> array) {
+        array.reversed();
+        for (Long s : array) {
+            System.out.print(s + " ");
         }
         System.out.println();
     }

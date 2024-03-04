@@ -1,3 +1,5 @@
+import java.sql.Array;
+import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Input {
@@ -26,6 +28,15 @@ public class Input {
     public static double getDouble(String message) {
         System.out.println(message);
         return Double.parseDouble(getScanner().nextLine());
+    }
+
+    public static ArrayList<Long> getLongArray(String message) {
+        String[] line = getStringArray(message);
+        ArrayList<Long> result = new ArrayList<>();
+        for (String s : line) {
+            result.add(Long.parseLong(s));
+        }
+        return result;
     }
 
     public static String[] getStringArray(String message) {

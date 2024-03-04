@@ -1,7 +1,9 @@
+import java.util.ArrayList;
+
 public class Main {
     public static void main(String[] args) {
-        String[] array = Input.getStringArray("Введите элементы массива");
-        String[] sortedArray = ArrayOperations.BubbleSortByLength(array);
+        ArrayList<Long> array = Input.getLongArray("Введите элементы массива: ");
+        ArrayList<Long> sortedArray = ArrayOperations.BubbleSortByLength(array);
         System.out.println("Отсортированный массив: ");
         Output.printArray(sortedArray);
         System.out.println("Массив в обратном порядке: ");
